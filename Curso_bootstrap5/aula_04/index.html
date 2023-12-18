@@ -7,25 +7,87 @@
       rel="stylesheet"
       href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <title>Breakpoints</title>
+    <title>Formatacao de colunas</title>
+    <style>
+      .row {
+        height: 200px;
+        background-color: aliceblue;
+      }
+      .col-3 {
+        border: 1px solid black;
+        padding: 20px;
+        background-color: rgb(204, 211, 208);
+      }
+    </style>
   </head>
   <body>
-    <h1>Breakpoints</h1>
+    <div class="container">
+      <div class="row justify-content-evenly">
+        <!-- align-items-center - align-items-xxl-center-->
+
+        <div class="col-3">Coluna 1</div>
+        <!-- align-self-start -->
+        <div class="col-3">Coluna 2</div>
+        <!-- align-self-center -->
+        <div class="col-3">Coluna 3</div>
+        <!-- align-self-end -->
+      </div>
+    </div>
     <hr />
-    <div class="text-center text-md-start text-xl-end">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, veritatis
-      explicabo! Alias, minus? Dolorem sequi ipsam commodi ab illum ratione
-      repellat repudiandae, recusandae voluptate optio quam itaque earum, iste
-      eligendi, provident minima harum vel quos omnis voluptates molestias
-      laboriosam hic minus eum. Distinctio ad cumque impedit, voluptatum aliquid
-      vero! Molestias dicta quibusdam minus, quisquam nam laboriosam enim quas
-      similique incidunt, consequatur officia placeat totam voluptas corrupti
-      quam labore aliquid. Deserunt quaerat eveniet, libero ea tempore labore
-      blanditiis fuga nulla quae nostrum quos quam pariatur in velit quasi
-      maxime, rem odit sint totam reiciendis aperiam facere. Sed sapiente
-      cupiditate eius modi!
+    <div class="container">
+      <div class="row justify-content-evenly">
+        <!-- align-items-center - align-items-xxl-center-->
+
+        <div class="col-3 order-2">Coluna 1</div>
+        <!-- align-self-start -->
+        <div class="col-3 order-3">Coluna 2</div>
+        <!-- align-self-center -->
+        <div class="col-3 order-1">Coluna 3</div>
+        <!-- align-self-end -->
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="row">
+        <div class="col-3 offset-1">Coluna 1</div>
+        <!-- preencheu as 12 colunas -->
+        <div class="col-3 offset-2">Coluna 2</div>
+        <div class="col-3">Coluna 3</div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="row">
+        <div class="col-3">Coluna 1</div>
+        <!-- preencheu as 12 colunas -->
+        <div class="col-3 ms-auto">Coluna 2</div>
+        <!-- ms- margin-start - preenche todo o meio com margem automatica -->
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="row">
+        <div class="col-3 ms-auto">Coluna 1</div>
+        <!-- preencheu as 12 colunas -->
+        <div class="col-3 ms-auto">Coluna 2</div>
+        <!-- ms- margin-start - preenche todo o meio com margem automatica -->
+      </div>
     </div>
 
+    <hr />
+    <div class="container">
+      <div class="row">
+        <div class="col-3 mx-auto">Coluna 1</div>
+        <!-- centrailza div no eixo X -->
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="col-3">Coluna 1</div>
+      <!-- preencheu as 12 colunas -->
+      <div class="col-3">Coluna 2</div>
+      <!-- ms- margin-start - preenche todo o meio com margem automatica -->
+    </div>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

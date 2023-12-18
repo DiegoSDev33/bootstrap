@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <title>Sistema de layout em grid</title>
+    <style>
+      .h100{
+        height: 100px;
+      }
+      .h400{
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+   <!-- colocase col-12 pois ele é mobile first -->
+<div class="container">
+  <div class="row">
+  <div class="col-12 bg-dark bg-opacity-50 h100"></div>
+  <div class="col-12 bg-dark bg-opacity-25 col-md-3 h400"></div>
+  <div class="col-12 bg-dark bg-opacity-75 col-md-9 h400"></div>
+  <div class="col-12 bg-dark bg-opacity-50 h100"></div>
+</div>
+<hr>
+<div class="row">
+  <div class="col bg-dark bg-opacity-50 h100"></div>
+  <div class="col bg-dark bg-opacity-25 h100"></div>
+  <div class="col bg-dark bg-opacity-75 h100"></div>
+  <div class="col bg-dark bg-opacity-50 h100"></div>
+  <div class="col bg-dark bg-opacity-25 h100"></div>
+  <div class="col bg-dark bg-opacity-75 h100"></div>
+  <div class="col bg-dark bg-opacity-50 h100"></div>
+</div>
+
+</div>
+
+
+
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
